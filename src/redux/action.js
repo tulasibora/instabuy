@@ -52,3 +52,8 @@ export const removeItemsfromCart = (payload) => {
     payload: payload,
   };
 };
+export const toremoveUser = () => {
+  return {
+    type: "removeUser",
+  };
+};

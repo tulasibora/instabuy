@@ -12,13 +12,7 @@ import Cart from "./Components/Cart";
 import cartButton from "./asserts/CartButton.png";
 import CheckOut from "./Components/CheckOut";
 import { useDispatch, useSelector } from "react-redux";
-import {
-  addItemsIntoCart,
-  removeItemsfromCart,
-  setTotalPrice,
-  setTotalQuantity,
-  toStoreuserData,
-} from "./redux/action";
+import { removeItemsfromCart, toremoveUser } from "./redux/action";
 function App() {
   const navigate = useNavigate();
   const storeData = useSelector((state) => state.user);
@@ -26,7 +20,7 @@ function App() {
   const addCart = useSelector((state) => state.addCart);
   const dispatch = useDispatch();
   const hadlelogOutbtn = () => {
-    dispatch(toStoreuserData({}));
+    dispatch(toremoveUser());
     dispatch(removeItemsfromCart());
     navigate("/");
   };

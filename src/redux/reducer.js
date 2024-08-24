@@ -57,6 +57,11 @@ export const reducer = (state = initialState, action) => {
         ...state,
         addCart: {},
       };
+    case "removeUser":
+      return {
+        ...state,
+        user: {},
+      };
     default:
       return { ...state };
   }

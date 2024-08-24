@@ -61,6 +61,7 @@ export const reducer = (state = initialState, action) => {
       return {
         ...state,
         user: {},
+        userEntered: { username: "", password: "", fullname: "" },
       };
     default:
       return { ...state };

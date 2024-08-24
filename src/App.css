@@ -1,38 +1,271 @@
-.App {
-  text-align: center;
+.bg-body-tertiary {
+  --bs-bg-opacity: 1;
+  background-color: rgba(
+    var(--bs-tertiary-bg-rgb),
+    var(--bs-bg-opacity)
+  ) !important;
+  height: 12vh;
+  padding: 0rem 2rem !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* ////////////// */
+
+.HomePage {
+  padding: 0rem 1.5rem;
+  height: 88vh;
+}
+.carousel-Image {
+  height: 86vh;
+  width: 48vw;
+  margin-left: 3rem;
+}
+.carousel-control-next-icon {
+  margin-left: 11rem !important;
+  background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27 fill=%27%23216ad9%27%3e%3cpath d=%27M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z%27/%3e%3c/svg%3e") !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.carousel-control-prev-icon {
+  margin-left: -12rem !important;
+  background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27 fill=%27%23216ad9%27%3e%3cpath d=%27M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z%27/%3e%3c/svg%3e") !important;
+}
+.textInItem {
+  text-align: left;
+  margin-left: 4rem;
+  margin-top: 5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.textInItem h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.textInItem h1 {
+  font-size: 3.5rem;
+  color: royalblue;
+  font-weight: bolder;
+}
+.textInItem p {
+  font-size: 1.3rem;
+  margin-bottom: 3rem;
+}
+.ComapanyLogos {
+  display: flex;
+}
+.ComapanyLogos img {
+  height: 3.5rem;
+}
+.browesButton {
+  margin: 1.5rem 0rem;
+}
+.ComapanyLogos-hedding {
+  margin-bottom: 1rem;
+}
+
+/* ///////////  LOG IN PAGE ////////////// */
+.loginRight img {
+  height: 70vh;
+  padding: 1rem;
+  /* margin-left: 7rem; */
+  margin-top: 4.5rem;
+}
+.logingpage {
+  background-color: royalblue;
+  height: 87vh;
+  display: flex;
+}
+.loginLeft {
+  width: 50vw;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  margin-left: 6rem;
+  padding: 2rem;
+}
+.logo-headding {
+  display: flex;
+  margin: 1rem 0rem;
+  align-items: center;
+  gap: 1rem;
+}
+.logo-headding img {
+  height: 2.5rem;
+  background-color: aliceblue;
+  border-radius: 0.5rem;
+}
+.logo-headding h2 {
+  font-size: 2rem;
+}
+.instaBuyContent {
+  margin: 1.5rem 0rem;
+}
+.instaBuyContent h1 {
+  font-size: 5rem;
+  font-weight: bold;
+}
+.instaBuyContent p {
+  font-size: 1.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.input-form {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.input-form input {
+  height: 3rem;
+  width: 16vw;
+  margin-bottom: 1rem;
+  outline: none;
+  border-radius: 0.5rem;
+  border: none;
+  padding-left: 1rem;
+}
+.shopping button {
+  width: 33vw;
+  height: 3rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: 2px solid white;
+  color: white;
+  background-color: royalblue;
+}
+.shopping p {
+  margin-top: 1rem;
+  margin-left: 8rem;
+}
+.fullName-input input {
+  width: 33vw;
+  height: 3rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+/* //////////////////  */
+.card {
+  width: 15vw;
+  padding: 0rem 0rem 1rem 0rem;
+  border: none;
+  margin: 1rem;
+  display: flex;
+}
+.cardImage {
+  height: 22vh;
+}
+.cardDiv {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1.5rem;
+}
+.cardTitle {
+  margin: 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.viewProductButton {
+  width: 7rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ProductsMainDiv {
+  margin-left: 3rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* //////////////////// */
+.ProductMainDiv {
+  margin: 0.5rem;
+  height: 87vh;
+  display: flex;
+}
+.prouductImages {
+  width: 15vw;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.leftDiv {
+  display: flex;
+}
+.productSingleImage {
+  height: 7rem;
+  width: 10vw;
+  border-radius: 2rem;
+}
+.productDes {
+  width: 32vw;
+}
+
+.Proctimage {
+  height: 40vh;
+  padding: 1.5rem;
+  margin: 1rem 0rem;
+}
+.productDesDiv {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+.AddtoCartBtn {
+  margin: 1rem 0rem;
+}
+
+.pricedis {
+  color: green;
+}
+.productDesDiv h3 {
+  color: royalblue;
+}
+/* ///////////////////////// */
+
+.ProductsCategory {
+  margin-left: 2rem;
+}
+
+/* /// */
+.categoryProducts {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.cardProducts {
+  width: 5rem;
+  height: 5vh;
+}
+.cardImageProducts {
+  height: 5rem;
+}
+.cardTitleProducts {
+  font-size: 1rem;
+}
+#TitleProducts {
+  font-size: 0.7rem;
+}
+.viewProductButtonCategory {
+  width: 5vw;
+  height: 3.5vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.MainDivCart {
+  display: flex;
+  gap: 1rem;
+}
+.cartTable {
+  width: 50vw;
+  padding: 2rem;
+  margin: 1rem;
+  background-color: lightgray;
+  border-radius: 2rem;
+}
+.cartImage img {
+  height: 80vh;
+}
+
+.errorText {
+  font-weight: bold;
+  color: rgb(235, 19, 11);
+  margin-left: 8rem;
 }
